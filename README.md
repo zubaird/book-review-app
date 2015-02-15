@@ -1,7 +1,15 @@
 # Book-review-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+I made this book review app to take advantage Ember.js Data Fixtures.
+
+This app uses nested resources, and multiple controllers to deliver an interactive and intuitive user experience that displays books, authors, and review details.
+
+With some configuration, this app can be adapted to hook on to a comprehensive book review API or database for practical use.
+
+Please contact me if you have any inquiries or suggestions.  
+I would love to hear from you!
+
+Below is an Ember-CLI generated guide for launching this app on your local machine.
 
 ## Prerequisites
 
