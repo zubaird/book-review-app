@@ -1,14 +1,17 @@
-
 <div class="ui padded grid">
     <div class="two column row">
       <div class="white column">
         <h2 class="ui header">Book Review App</h2>
         <p>Books, Authors, and Review Details</p>
+         {{#link-to 'books'}}Home{{/link-to}} |
+         {{#link-to 'reviews'}}Reviews{{/link-to}}
+     </div>
     </div>
 </div>
 <section id="bookapp">
 		{{outlet}}
 </section>
+
 	 
 <footer id="info">
 	<p><small>2015 Zubair Desai</small></p>
