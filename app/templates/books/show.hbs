@@ -1,0 +1,20 @@
+{{outlet}}
+
+
+
+<div class="ui orange segment">
+  <h4 class="ui header">Review for {{title}} </h4>
+  <img {{bind-attr src=image}} class="ui small bordered image">
+
+{{#each item in reviews}}
+
+<div class="ui message">
+  <div class="header">
+    {{item.userName}}
+  </div>
+  <p>{{item.text}}</p>
+</div>
+{{/each}}
+</div>
+
+

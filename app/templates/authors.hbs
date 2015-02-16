@@ -1,0 +1,18 @@
+{{outlet}}
+<div class="ui stackable three column grid">
+	{{#each}}
+	<div class="column">  
+		<div class="ui segment">
+			<h1>Author: {{name}}</h1>
+	        <p><img {{bind-attr src=image}} class="ui fluid image "></p>   	
+	       	<p><strong>Bio:</strong> {{bio}} </p>
+	       	<strong>Books written:</strong>
+	       	<ul>
+	       		{{#each item in books}}
+	       		<li>{{item.title}} </li>
+	       		{{/each}}
+	       	</ul>	
+	    </div>
+	</div>
+	{{/each}}
+</div>

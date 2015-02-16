@@ -1,0 +1,29 @@
+<div class="ui orange segment">
+	<p>Sort-By: Rating</p><br>{{testValue}} 
+	<div class="ui stackable five column grid">
+
+		{{#each}}
+		<div class="column">  
+			<div class="ui segment">
+		        <img {{bind-attr src=image}} class="ui fluid image ">
+		       	<h4>{{title}}</h4>
+		     	<div class="ui segment">
+			       	<p>Genre: {{genre}} </p>
+			       	<p>Year: {{year}} </p>
+			       	<p>Author: {{author.name}} </p>
+
+			       	<p>{{#link-to "books.show" id}}
+			       		Rating: {{testValue}} 
+			       		{{/link-to}}
+						{{outlet}}
+			       	</p>
+
+					<div class="ui green basic button">
+						<a target="_blank" {{bind-attr href=amazonLink}}>Check Amazon</a>
+					</div>
+		     	</div>
+		    </div>
+		</div>
+		{{/each}}
+	</div>
+</div>

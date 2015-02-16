@@ -1,0 +1,13 @@
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+
+	model: function(){
+	  return this.store.find("book");
+	},
+
+	setupController: function (index, model) {
+	  this._super(index, model);
+	}
+
+});
